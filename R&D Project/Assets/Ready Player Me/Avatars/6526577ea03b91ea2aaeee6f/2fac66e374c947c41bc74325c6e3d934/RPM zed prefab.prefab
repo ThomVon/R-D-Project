@@ -3340,8 +3340,10 @@ GameObject:
   - component: {fileID: 75461696553705768}
   - component: {fileID: 5446597683532761183}
   - component: {fileID: 54685798775806816}
+  - component: {fileID: 6262502225411610284}
+  - component: {fileID: 6525038084982278855}
   m_Layer: 0
-  m_Name: 6526577ea03b91ea2aaeee6f
+  m_Name: RPM zed prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3382,7 +3384,7 @@ Animator:
   m_GameObject: {fileID: 7658382068813459808}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: ba5173a85368a4f4eb45fbc497be292c, type: 2}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0f92df3c2e41e7e4e8ecb7034c0ad1c2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -3410,6 +3412,46 @@ MonoBehaviour:
     BodyType: 1
     OutfitGender: 1
     SkinTone: '#bb8e7c'
+--- !u!114 &6262502225411610284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7658382068813459808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de97d242c6a58054885e66d2b56fe4c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bodyTrackingManager: {fileID: 0}
+  currentAutoHeightOffset: 0
+  findFloorDistance: 2
+  thresholdDistCloseToFloor: 0.02
+  thresholdDurationOffsetError: 1.5
+--- !u!114 &6525038084982278855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7658382068813459808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90982a9a211eb694ea6d767b43787f56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thresholdEnterGroundedState: 0.03
+  thresholdLeaveGroundedState: 0.2
+  thresholdFootLock: 0.05
+  raycastDetectionLayers:
+    serializedVersion: 2
+    m_Bits: 65536
+  ikPositionApplicationRatio: 1
+  ikRotationApplicationRatio: 1
+  ankleHeightOffset: 0.102
+  resetAutomaticOffset: 114
+  canSpawn: 0
 --- !u!1 &7875236714473245729
 GameObject:
   m_ObjectHideFlags: 0
