@@ -234,7 +234,7 @@ MonoBehaviour:
   showSEARCHING: 0
   showOFF: 0
   delayBeforeSpawn: 1
-  avatar: {fileID: 2040221966520362513, guid: a61d1544c72243e40b8a2f447e8104e5, type: 3}
+  avatar: {fileID: 7658382068813459808, guid: d19a304c9e80a9646b9a804847334fce, type: 3}
   skeletonBaseMaterial: {fileID: 2100000, guid: 1b2395225722dc948a38ffcdcc9f04cc, type: 2}
   displaySDKSkeleton: 0
   applyHeighOffsetToSDKSkeleton: 0
