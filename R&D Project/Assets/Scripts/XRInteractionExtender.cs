@@ -11,9 +11,10 @@ public class XRInteractionExtender : MonoBehaviour
     {
         if (args.interactableObject.transform.CompareTag("Sit"))
         {
-            var asdf = args.interactableObject.transform.gameObject.GetComponent<SitObject>().GetSitPosition();
-            _xrRig.transform.position = asdf.position;
-            _xrRig.transform.rotation = asdf.rotation;
+            //add code here to play animation
+            var interactableTransform = args.interactableObject.transform.gameObject.GetComponent<SitObject>().GetSitPosition();
+            _xrRig.transform.SetPositionAndRotation(interactableTransform.position, interactableTransform.rotation);
+            //add code here to set the avatar to a sitting position
         }
     }
 }
